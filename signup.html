@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Signup</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js" defer></script>
+    <script src="/js/validation.js" defer></script>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+            padding-top: 20px;
+            background-image: url('image/jk.jpg');
+            background-size: cover; 
+            max-height: 1000px;
+            background-position: center;
+            background-attachment: fixed; 
+            background-repeat: no-repeat; 
+            opacity: 0.8; 
+        }
+       
+        form {
+            margin-top: 90px;
+            width: 100%;
+            max-width: 330px; 
+            padding: 20px; 
+            background-color:rgba(59, 59, 59, 0);
+            border-radius: 8px; 
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); 
+        }
+    
+        input {
+            margin-top: 15px;
+            width: 330px;
+            box-sizing: border-box;
+        }
+      
+        h1 {
+            color: rgb(255, 0, 0); 
+            text-align: center; 
+            margin-bottom: 10px; 
+        }
+        
+       
+        button {
+            background-color: red;
+            margin-top: 15px;
+            margin-left: 100px;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+    
+    
+    <form action="process-signup.php" method="post" id="signup" novalidate>
+
+        <h1>Register Here</h1>
+        <div>
+            <input type="text" id="name" name="name" placeholder="Name"> 
+        </div>
+
+        <div>
+            <input type="email" id="email" name="email" placeholder="Email">
+        </div> 
+
+        <div>
+            <input type="password" id="password" name="password" placeholder="Password">
+        </div>
+
+        <div>
+            <input type="password" id="password_confirmation" name="password_confirmation" placeholder="Confirm Password">
+        </div>
+
+        <button>Register</button>
+        <p>Login Here!<a href = "login.php">login</a></p>
+        
+    </form>
+
+</body>
+
+</html>
